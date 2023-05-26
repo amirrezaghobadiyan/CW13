@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cw13</title>
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body>
+    <div class="container text-base relative ">
+        <div class="header flex justify-center text-center w-full h-16 bg-sky-800 mr-10 p-5 rounded-md">
+            <div class="dropdown  text-white mr-10">
+                <button onclick="myFunction()" class="dropbtn mr-72 rounded-md p-1 "> تخصص ها</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">دندانپزشک</a>
+                    <a href="#">پزشک اطفال </a>
+                    <a href="#">متخصص قلب</a>
+                    <a href="#">متخصص داخلی</a>
+                    <a href="#">مغز و اعصاب</a>
+                </div>
+                <a href="#" class=" mr-40 rounded-md p-1"> سوالات متداول </a>
+                <input type="text" placeholder="جستجو..." class="input rounded-md p-1 justify-end mr-60">
+            </div>
+        </div>
+        <div class="main bg-blue-200 mr-10 rounded-md w-full h-full  ">
+            <div class=" inline-block mr-16 mt-5 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : نریمان</p>
+                <p> نام خانوادگی : نجفی</p>
+                <p> تخصص : دندانپزشک</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+            <div class=" inline-block mr-16 mt-5 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : فرزاد</p>
+                <p> نام خانوادگی : جهانگیری</p>
+                <p> تخصص: قلب</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+            <div class=" inline-block mr-16 mt-5 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : بهروز</p>
+                <p> نام خانوادگی : عشقی</p>
+                <p> تخصص: اطفال</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+            <div class=" inline-block mr-16 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : سهراب</p>
+                <p> نام خانوادگی : کاشف</p>
+                <p> تخصص : داخلی</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+            <div class=" inline-block mr-16 mt-5 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : امیررضا </p>
+                <p> نام خانوادگی : قبادیان</p>
+                <p> تخصص: مغز و اعصاب</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+            <div class=" inline-block mr-16 mt-5 mb-5 bg-blue-300 rounded-md text-white p-5">
+                <img class="w-15 h-10" src="/img/profile.png" alt="">
+                <p> نام : هومن </p>
+                <p> نام خانوادگی : صحرایی</p>
+                <p> تخصص: مغز و اعصاب</p>
+                <button
+                    class=" cursor-pointer rounded-2xl pl-3 text-sm pr-3 bg-blue-500 pb-1 pt-1 mt-5 mr-5 shadow-2xl">
+                    رزرو پزشک</button>
+            </div>
+
+        </div>
+        <!-- Modal -->
+
+    </div>
+    <div class="modal absolute w-2/4 h-72 mr-72 mt-0 rounded-md p-1 text-base ">
+        <div class="info ">
+            <img class="w-15 h-10 " src="/img/profile.png" alt="">
+            <p class="">نام: </p>
+            <p class=""> تخصص </p>
+        </div>
+        <h1 class=" text-center p-3">رزرو نوبت</h1>
+
+        <div class="reserve bg-gray-300 p-8 rounded-md">
+            <div class=" flex justify-center">
+                <input class="m-2 rounded-md w-60 p-1 outline-none" type="text" placeholder="نام">
+                <input class="m-2 rounded-md w-60 p-1 outline-none" type="text" placeholder="نام خانوداگی">
+            </div>
+            <div class=" flex justify-center">
+                <input class="m-2 rounded-md w-60 p-1 outline-none" type="number" placeholder="شماره موبایل بیمار">
+            </div>
+            <div class="btn text-center">
+                <button
+                    class=" rounded-lg pl-6 pr-6 pb-1 pt-1 text-white bg-slate-700 m-1 shadow-2xl cursor-pointer">شنبه</button>
+                <button
+                    class=" rounded-lg pl-6 pr-6 pb-1 pt-1 text-white bg-slate-700 m-1 shadow-2xl cursor-pointer">یکشنبه</button>
+                <button
+                    class=" rounded-lg pl-6 pr-6 pb-1 pt-1 text-white bg-slate-700 m-1 shadow-2xl cursor-pointer">جمعه</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
